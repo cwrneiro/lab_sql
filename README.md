@@ -3,7 +3,7 @@
 
 # Databricks SQL Labs 
 
-Treinamento Hands-on na plataforma Databricks com foco nas funcionalidades de Analytics (SQL, Query, DataViz, Genie).
+Treinamento Hands-on na plataforma Databricks com foco nas funcionalidades de Analytics (SQL, Query, DataViz, Genie). 
 
 A arquitetura **LAKEHOUSE** e o **Databricks SQL** trazem recursos de Data Warehouse para sua Arquitetura de Dados. </br>
 Usando estruturas de dados, relações e ferramentas de gerenciamento familiares, você pode modelar um Data Warehouse de alto desempenho e econômico que pode ser executado diretamente em seu Data Lake.
