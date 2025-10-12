@@ -33,11 +33,41 @@ Existem funções nativas para executar tarefas pré-definidas ou enviar qualque
 </br></br>
 Para esse exercício, vamos explorar as funcionalidades citadas,  conforme exemplo abaixo:
 
-
+**ai_translate**
 ``` md
-SELECT ai_translate('Hello, how are you?', 'br') as traducao;
+SELECT texto as original, 
+       ai_translate(texto, 'br') as traducao
+  FROM (select 'Hello, how are you?' as texto)
+;
 ```
 </br>
+
+**ai_extract**
+
+``` md
+SELECT ai_extract(
+    'Envie um email para jane.doe@example.com sobre a reunião que marcamos as 10am.',
+    array('email', 'time')
+  );
+```
+
+**ai_mask**.
+``` md
+
+SELECT ai_mask(
+    'Me chamo Flavio Da Silva. Entre em contato comigo no 555-1234 ou nos visite na Av.Paulista, 1000',
+    array('phone', 'address')
+);
+```
+
+**ai_gen**
+``` md
+SELECT principio_ativo
+     , ai_gen(concat('forneça mais detalhes de como o medicamento ',principio_ativo,' atua no organismo de uma pessoa adulta. Forneça um texto de até 50 palavras')) 
+  FROM dbacademy.<seu_database>.dim_medicamento 
+ LIMIT 10
+ ;
+```
 
 Agora vamos pegar nossa tabela de medicamentos,</br> 
 criar uma nova coluna atribuindo comentários a cada medicamento de forma aleatória  usando a função **ai_gen** </br>
@@ -49,17 +79,20 @@ sizing AS (SELECT * FROM dbacademy.<seu_database>.dim_medicamento LIMIT 10),
 comentarios AS (
     SELECT
     CASE
-        WHEN rand() > 0.5 THEN
-        ai_gen(CONCAT('Write a positive comment about the medicine: ', nome_medicamento, '. comente em português'))
-        ELSE
-        ai_gen(CONCAT('Write a negative comment about the medicine: ', nome_medicamento, '. comente em português'))
+            WHEN rand() > 0.5 THEN ai_gen(CONCAT('Escreva em português um comentário positivo sobre o medicamento: ', nome_medicamento))
+            ELSE ai_gen(CONCAT('Invente em português um comentário negativo sobre o medicamento', nome_medicamento,'. Esse medicamento nao existe. seja criativo'))
     END AS medicamento_review
     FROM sizing
 )
     SELECT
     *,
     ai_analyze_sentiment(medicamento_review) AS sentimento_review
-    FROM comentarios
+    FROM comentarios;
+```
+**ai_fix_grammar**.
+
+``` md
+SELECT ai_fix_grammar('Nóis tá com fome. Bora fazer um break e comer um pão de queijo minero dos bão?');
 ```
 
 </br></br>
