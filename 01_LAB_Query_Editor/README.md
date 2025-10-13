@@ -125,13 +125,13 @@ CLUSTER BY (<clustering_columns>)
 Além disso podemos deixar a própria Plataforma de dados inteligente da databricks definir quais são as melhores colunas da nossa tabela para serem definidas como *clustering*.</br>
 <span style="color:green"> **VAMOS EXECUTAR ESSE EXEMPLO** </span>
 ```sql
-# captura informacoes antes de ativar o recurso
+-- captura informacoes antes de ativar o recurso
 DESC EXTENDED porte_empresa;
 
 ALTER TABLE porte_empresa
 CLUSTER BY AUTO;
 
-# captura informacoes depois de ativar o recurso
+-- captura informacoes depois de ativar o recurso
 DESC EXTENDED porte_empresa;
 ```
 #### Referências:
