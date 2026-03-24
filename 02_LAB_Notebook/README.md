@@ -45,6 +45,6 @@ Execute os comandos do Notebook, clicando no botão "RUN ALL".
 Visualize os resultados no Catalog Explorer:
 
 </br></br>
-<img src="https://github.com/Gabriel-Rangel/lab_sql/blob/main/images/v2_lab02_5.png?raw=true">
+<img src="https://github.com/CaduBettanim/lab_sql/blob/main/images/v3_lab02_5.png?raw=true">
 
 
