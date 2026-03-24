@@ -87,7 +87,7 @@ Clique no botão "**Publish**" para publicar o Painel.
 
 Vamos criar agora um novo contexto de dados.</br>
 Para isso, selecione novamente o ícone da Genie Code, </br>
-No campo de diálogo, copie o texto abaixo (ajuste para o seu banco de dados), cole e execute a instrução</br>
+No campo de diálogo, copie o texto abaixo, cole(ajuste para o seu banco de dados) e execute a instrução</br>
 Clique em *"Allow (Permitir)"* caso seja necessário</br>
 
 ``` 
@@ -131,7 +131,7 @@ o resultado esperado é o mostrado abaixo:</br>
 <img src="https://raw.githubusercontent.com/Databricks-BR/genie_ai_bi/main/images/lab2_10.png" width="700px">
 </br></br></br>
 
-## Exercício 02.07 - Adicionando um novo Gráfico com o contexto novo de dados
+## Exercício 02.06 - Adicionando um novo Gráfico com o contexto novo de dados
 
 1. Clique no menu azul suspenso na posição inferior do painel, </br>
 no botão com o ícone de gráfico </br>
