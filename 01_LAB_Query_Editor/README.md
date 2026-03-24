@@ -47,7 +47,7 @@ USE <seu_usuario>;
 2. Devemos sempre atribuir o nome do catálago e database antes do nome da tabela separado por "." (catalogo.<seu_usuario>.porte_empresa)</br>
 ou podemos especificar o catálago e database que queremos usar no próprio editor conforme imagem abaixo:
 </br></br>
-<img src="https://github.com/Gabriel-Rangel/lab_sql/blob/main/images/v3_lab01_setcatalago.png?raw=true">
+<img src="https://github.com/Gabriel-Rangel/lab_sql/blob/main/images/v2_lab01_setcatalago.png?raw=true">
 </br></br>
 
 3. Crie a tabela a seguir:
