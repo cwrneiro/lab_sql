@@ -83,14 +83,18 @@ Clique no botão "**Publish**" para publicar o Painel.
 </br></br></br>
 
 
-## Exercício 02.05 - Criando um NOVO contexto de dados
+## Exercício 02.05 - Criando um NOVO contexto de dados com Genie Code
 
 Vamos criar agora um novo contexto de dados.</br>
-Para isso, entre na opção "**SQL Editor**" no MENU lateral do Databricks, </br>
-selecione o Catálogo e o Schema na barra superior do Editor de Query,</br>
-e escreva o texto abaixo:</br>
+Para isso, selecione novamente o ícone da Genie Code, </br>
+No campo de diálogo, copie o texto abaixo (ajuste para o seu banco de dados), cole e execute a instrução</br>
+Clique em *"Allow (Permitir)"* caso seja necessário</br>
 
 ``` 
+Considerando o seguinte database:
+dbacademy.<seu_database>.stock_bigtech
+
+Crie um novo dataset:
 Selecione o nome da empresa, stock,
 mínimo valor de fechamento, máximo valor de fechamento
 e percentual de variação entre o mínimo e o máximo valor de fechamento
@@ -98,11 +102,14 @@ da tabela dbacademy.<seu_nome>.stock_bigtech
 agrupando por empresa e stock.
 Use a coluna company para achar o nome da empresa
 ```
-</br></br>
-<img src="https://raw.githubusercontent.com/Databricks-BR/genie_ai_bi/main/images/lab2_09.png" width="700px">
+Aguarde a execução terminar 
+</br>
+</br>
+<img src="https://github.com/CaduBettanim/lab_sql/blob/96d89fd92d7e2626f4c364ac0126ef175424b724/images/v2_lab2_09.png" width="700px">
 </br></br></br>
 
-Acrescente ao resultado a linha de concatenação com o nome da ação (STOCK), </br>
+Vá até *"Data (Dados)"*
+Selecione o novo dataset criado e acrescente ao resultado a linha de concatenação com o nome da ação (STOCK), </br>
 com o LINK (URL) de uma imagem. </br>
 
 ``` sql
@@ -122,45 +129,6 @@ GROUP BY company, stock;
 Ao executar a query (botão RUN),</br>
 o resultado esperado é o mostrado abaixo:</br>
 <img src="https://raw.githubusercontent.com/Databricks-BR/genie_ai_bi/main/images/lab2_10.png" width="700px">
-</br></br></br>
-
-## Exercício 02.06 - Adicionando o NOVO contexto de dados ao Dashboard
-
-Agora vamos adicionar o novo contexto de dados (calculado na Query);</br>
-como mais uma fonte de dados no Painel.</br>
-Para isso, volte na opção "**Dashboards**" no menu lateral Databricks,</br>
-Escolha o nome do Painel que foi criado,</br>
-e Clique no botão (combo box) de "**Published**" para "**Draft**".
-</br></br>
-<img src="https://raw.githubusercontent.com/Databricks-BR/genie_ai_bi/main/images/lab2_10b.png" width="700px">
-</br></br></br>
-
-Clique na opção "**Data**".</br>
-No item "Create another Dataset"</br>
-clique no botão "**+Create from SQL**".</br>
-
-</br></br>
-<img src="https://raw.githubusercontent.com/Databricks-BR/genie_ai_bi/main/images/lab2_11.png" width="700px">
-</br></br></br>
-
-Faça o Copy&Paste do código SQL gerado no exercício anterior:
-
-``` sql
-
-SELECT 
-  "https://raw.githubusercontent.com/Databricks-BR/genie_ai_bi/main/images/" || stock || ".png" AS image,
-  company,
-  stock,
-  MIN(close) AS min_close,
-  MAX(close) AS max_close,
-  ((MAX(close) - MIN(close)) / MIN(close) * 100) AS percentual_variacao
-FROM dbacademy.<seu_database>.stock_bigtech
-GROUP BY company, stock;
-
-```
-E depois clique no botão "**RUN**"
-</br>
-<img src="https://raw.githubusercontent.com/Databricks-BR/genie_ai_bi/main/images/lab2_12.png" width="700px">
 </br></br></br>
 
 ## Exercício 02.07 - Adicionando um novo Gráfico com o contexto novo de dados
