@@ -136,19 +136,21 @@ o resultado esperado é o mostrado abaixo:</br>
 1. Clique no menu azul suspenso na posição inferior do painel, </br>
 no botão com o ícone de gráfico </br>
 2. Na barra de configuração (lateral direita do painel),</br>
-escolha o nome do nome Dataset (que veio da Query SQL).</br> 
-3. Configure o tipo de Visualização para "Tabela"(Table).</br>
-4. Marque a opção para incluir TODOS os campos na tabela.
-5. Na configuração, clique no campo(coluna) com o nome de "**image**".</br>
+escolha o nome do Dataset (que veio do Genie Code).</br> 
+3. Configure o tipo de Visualização para "Table"(Tabela).</br>
+4. Na opção Columns (Colunas) clique no sinal "+".
+5. Selecione a opção "Add all (Adicionar todos)"
+
 </br></br>
-<img src="https://github.com/Gabriel-Rangel/lab_sql/blob/main/images/v2_lab05_2.png?raw=true" width="700px">
+<img src="https://github.com/CaduBettanim/lab_sql/blob/main/images/v4_lab05_2.png?raw=true" width="900px">
 </br></br></br>
 
-6. Na opção de "Display", configure como "image".
-7. Na opção de "SIZE", coloque o valor de "25" no campo "width".
-8. Na opção de "Default column width", coloque o valor de "150".
+6. Passe o mouse na coluna image e selecione a seta para baixo.</br>
+7. Clique em "Style (Estilo)".
+8. Em "Display Type" selecione a opção "Image (Imagem)"
+9. Em "Height (Altura)" digite o valor 25
 </br></br>
-<img src="https://github.com/Gabriel-Rangel/lab_sql/blob/main/images/v2_lab05_3.png?raw=true" width="700px">
+<img src="https://github.com/CaduBettanim/lab_sql/blob/main/images/v4_lab05_3.png?raw=true" width="400px">
 </br></br></br>
 
 Como resultado esperado, teremos a figura abaixo.</br>
