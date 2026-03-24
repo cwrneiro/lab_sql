@@ -36,20 +36,18 @@ SELECT to_date(`date`, 'MM/dd/yyyy') `nova_data`, * FROM dbacademy.<seu_database
 
 Vá para a aba de dashboard *"Untitled page"*.  </br>
 
-Selecione com o mouse a área onde vai ficar o gráfico.
+No canto superior direito, selecione o ícone da Genie Code.
 
-<img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_ai_04.png" style="height: 200px;">
-
-</br></br>
-Na lacuna de texto do ASSISTENTE (Generative AI), faça a seguinte solicitação:
+Na caixa de diálogo insira a seguinte informação:
 ``` md
 gráfico de linhas do valor de fechamento por dia e por empresa
 ```
 
-<img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_ai_05.png" style="height: 100px;"></br>
+<img src="https://github.com/CaduBettanim/lab_sql/blob/4a4a65496b601a7a959d55569e8b26e8fa415f01/images/v2_lab05_ai_05.png" style="height: 500px;">
 
-
-<img src="https://github.com/Gabriel-Rangel/lab_sql/blob/main/images/v2_lab05_1.png?raw=true" width="800px">
+</br></br>
+Um gráfico foi gerado como no exemplo abaixo:
+<img src="https://github.com/CaduBettanim/lab_sql/blob/main/images/v3_lab05_1.png?raw=true" width="800px">
 </br></br></br>
 
 ## Exercício 02.03 - Adicionando um FILTRO de página
