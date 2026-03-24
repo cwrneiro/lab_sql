@@ -16,10 +16,10 @@ Nesse exercício vamos importar um Notebook (em linguagem Python) para copiar as
 
 * Escolha a opção do MENU:  "Workspace", conforme figura abaixo.</br>
 * Selecione "Home".</br>
-* Clique com o botão direito do mouse na área destacada.</br>
+* Clique nos 3 pontinhos do lado direito superior.</br>
 * Selecione a opção IMPORTAR.</br> </br>
 
-<img src="https://github.com/Gabriel-Rangel/lab_sql/blob/main/images/v2_lab02_1.png?raw=true">
+<img src="https://github.com/CaduBettanim/lab_sql/blob/f6fc89784c7ac4b9ca21360269a547b237bca481/images/v3_lab02_1.png?raw=true">
 </br></br>
 Na janela de importação, clique na opção "**URL**".
 
