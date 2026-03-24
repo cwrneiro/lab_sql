@@ -22,13 +22,20 @@ Na tela do Dashboard, clique na ABA **"Data"** para adicionar uma fonte de dados
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_ai_01.png" style="height: 300px;"></br>
 
-Escolha a opção *"Add data source"*
+1 - Escolha a opção *"Create from SQL"*
 
-<img src="https://github.com/Gabriel-Rangel/lab_sql/blob/main/images/v2_lab05_5.png?raw=true" style="height: 300px;">
+2 - Copie a consulta abaixo e cole no editor (não se esqueça de incluir seu banco de dados)
+``` md
+SELECT to_date(`date`, 'MM/dd/yyyy') `nova_data`, * FROM dbacademy.<seu_database>.stock_bigtech
+```
 
-Digite a palavra de busca **"<seu_database>.stock_bigtech"** escolha a tabela e depois volte para área do **CANVAS**
+3 - Clique em *"Run"*
 
-Clique no menu suspenso, para adicionar uma nova visualização.  </br>
+<img src="https://github.com/CaduBettanim/lab_sql/blob/main/images/v3_lab05_5.png?raw=true" style="height: 300px;">
+
+
+Vá para a aba de dashboard *"Untitled page"*.  </br>
+
 Selecione com o mouse a área onde vai ficar o gráfico.
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_ai_04.png" style="height: 200px;">
