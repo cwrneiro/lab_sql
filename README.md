@@ -1,9 +1,9 @@
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/header_handson_sql.png">
 
-# Databricks SQL Labs 
+# Databricks SQL Labs — Unimed Campinas 
 
-Treinamento Hands-on na plataforma Databricks com foco nas funcionalidades de Analytics (SQL, Query, DataViz, Genie). 
+Treinamento Hands-on **presencial** para os **Curadores de Dados** da **Unimed Campinas**, com foco nas funcionalidades de Analytics da plataforma Databricks (SQL, Query, DataViz, Genie). O conteúdo é de **nível básico** e usa um conjunto de dados no contexto de **operadora de saúde** (beneficiários, procedimentos, autorizações e afins), aproximando os exercícios da realidade do dia a dia da equipe.
 
 A arquitetura **LAKEHOUSE** e o **Databricks SQL** trazem recursos de Data Warehouse para sua Arquitetura de Dados. </br>
 Usando estruturas de dados, relações e ferramentas de gerenciamento familiares, você pode modelar um Data Warehouse de alto desempenho e econômico que pode ser executado diretamente em seu Data Lake.
@@ -20,11 +20,28 @@ o **AI/BI** é um pacote de ferramentas de Business Intelligende integrados e fo
 </br></br> 
 
 ## Ambiente do Laboratório
-Para o desenvolvimento desse laboratório vamos utilizar o **Databricks Free Edition**,  uma versão gratuita do Databricks desenvolvida para estudantes, educadores, amadores e qualquer pessoa interessada em aprender ou fazer experiências com dados e AI.
+Este treinamento é executado no **workspace da própria Unimed Campinas** (não utilizamos mais a Databricks Free Edition). Cada participante trabalha no ambiente corporativo, com os dados e as políticas de acesso já provisionados pela equipe de plataforma.
 
-A Free Edition oferece um site Databricks workspace fácil de usar, onde é possível explorar conjuntos de dados, criar e compartilhar projetos e trabalhar com AI e ferramentas de aprendizado de máquina. É ideal para aprendizado, prototipagem e exploração colaborativa.
+**Pré-requisitos:**
 
-**Crie sua conta [aqui](https://login.databricks.com/?dbx_source=docs&intent=SIGN_UP&tuuid=6a4ffcf3-cc8e-4bf6-885e-1e7824086e47&rl_aid=85dd1431-2778-4946-9d43-5dd210e5c552&provider=DB_FREE_TIER)**
+* **Acesso ao workspace Databricks da Unimed Campinas** (login corporativo / SSO).
+* Um **catálogo e schema de treinamento** para o seu usuário. Os labs seguem o padrão `dbacademy.<seu_database>` — use o schema indicado pelo instrutor.
+* Um **SQL Warehouse ligado** (ativo) para executar as consultas e notebooks.
+* **Permissão para criar tabelas** no seu schema de treinamento (necessária, por exemplo, para o carregamento das bases e o upload de CSV).
+
+> **Observação:** a criação de salas **Genie** pode estar restrita no workspace da Unimed. Caso o seu usuário não tenha essa permissão, o **Lab 07 (Genie)** será conduzido em **modo demo** pelo instrutor.
+
+## Módulos do Treinamento
+
+Os módulos são realizados na seguinte ordem ao longo do dia:
+
+1. **00_Abertura** — Boas-vindas, objetivos e visão geral do ambiente.
+2. **01_LAB_Query_Editor** — Primeiros passos no SQL Editor.
+3. **02_LAB_Notebook** — Importando e executando um Notebook para carregar as bases.
+4. **05_LAB_SQL_Gen_AI** — Assistente de SQL com IA generativa.
+5. **06_LAB_Dashboard** — Criação de dashboards AI/BI.
+6. **07_LAB_Genie** — Análise em linguagem natural com o Genie (modo demo se restrito).
+7. **08_LAB_Upload_CSV** — Carregando dados a partir de arquivos CSV.
 
 ## Webinar - Vídeo Youtube
 
@@ -40,7 +57,6 @@ A Free Edition oferece um site Databricks workspace fácil de usar, onde é poss
 * [Genie AI/BI  - Análise inteligente para equipes de negócios](https://www.databricks.com/br/product/ai-bi/genie)
 * [Genie AI/BI - Documentação Oficial](https://docs.databricks.com/pt/genie/index.html)
 * [BLOG - 7 Techniques of Semantic Modeling for Databricks Genie](https://medium.com/@kyle.hale/7-techniques-of-semantic-modeling-for-databricks-genie-b117460efe10)
-* [Databricks Free Edition - Documentação](https://docs.databricks.com/aws/pt/getting-started/free-edition)
 
 
 
