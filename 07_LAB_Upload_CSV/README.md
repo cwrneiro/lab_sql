@@ -1,6 +1,6 @@
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/header_handson_sql.png">
 
-# Hands-On LAB 08 - Importando uma Planilha (CSV) pela Interface
+# Hands-On LAB 07 - Importando uma Planilha (CSV) pela Interface
 
 Treinamento Hands-on na plataforma Databricks com foco nas funcionalidades de Analytics (SQL, Query, DataViz, Genie).
 
@@ -15,7 +15,7 @@ Vamos usar como exemplo uma **tabela de metas de atendimento por município** �
 </br></br>
 
 
-## Exercício 08.01 - Preparando o arquivo CSV de exemplo
+## Exercício 07.01 - Preparando o arquivo CSV de exemplo
 
 Antes de subir qualquer dado, você precisa de um arquivo `.csv` no seu computador. Um arquivo CSV é simplesmente uma planilha salva como **texto separado por vírgulas** — a primeira linha são os nomes das colunas (o cabeçalho) e cada linha seguinte é um registro.
 
@@ -40,7 +40,7 @@ Indaiatuba,5300,2026
 > **Dica:** Na prática, essa planilha pode ser qualquer base própria sua — uma lista de CIDs, um cadastro de prestadores, uma tabela de metas. O importante é que a **primeira linha contenha os nomes das colunas**.
 
 
-## Exercício 08.02 - Fazendo o upload pela interface do Databricks
+## Exercício 07.02 - Fazendo o upload pela interface do Databricks
 
 Agora vamos subir o arquivo `metas_municipio.csv` usando a UI do Databricks. Nenhum código é necessário nesta etapa.
 
@@ -51,7 +51,7 @@ Agora vamos subir o arquivo `metas_municipio.csv` usando a UI do Databricks. Nen
 5. Aguarde o upload. O Databricks vai ler o arquivo e mostrar uma **prévia dos dados** já organizados em colunas.
 
 
-## Exercício 08.03 - Escolhendo o destino e revisando as colunas
+## Exercício 07.03 - Escolhendo o destino e revisando as colunas
 
 Ainda na mesma tela de upload, você define **onde** a tabela será criada e confirma como os dados foram interpretados.
 
@@ -69,7 +69,7 @@ Ainda na mesma tela de upload, você define **onde** a tabela será criada e con
 Pronto! Sua planilha agora é a tabela `dbacademy.<seu_database>.metas_municipio`, governada pelo Unity Catalog.
 
 
-## Exercício 08.04 - Consultando a tabela recém-criada
+## Exercício 07.04 - Consultando a tabela recém-criada
 
 Vamos confirmar que os dados chegaram corretamente. Abra o **"SQL Editor"** no menu lateral e execute:
 
@@ -81,7 +81,7 @@ FROM dbacademy.<seu_database>.metas_municipio;
 Você deve ver as mesmas 7 linhas que estavam na sua planilha, agora consultáveis em SQL.
 
 
-## Exercício 08.05 - Validando os dados
+## Exercício 07.05 - Validando os dados
 
 Um bom curador sempre valida a base depois de subir. Vamos fazer algumas checagens simples.
 
@@ -122,7 +122,7 @@ ORDER BY ano;
 
 ## Conclusão
 
-Você acabou de disponibilizar uma **base própria** no Databricks sem depender do time de engenharia de dados: bastou subir a planilha pela interface. A partir de agora, essa tabela pode ser cruzada com outras bases em SQL, virar um gráfico no **Dashboard** (Lab 06) ou ser explorada em linguagem natural pelo **Genie** (Lab 07).
+Você acabou de disponibilizar uma **base própria** no Databricks sem depender do time de engenharia de dados: bastou subir a planilha pela interface. A partir de agora, essa tabela pode ser cruzada com outras bases em SQL, virar um gráfico no **Dashboard** (Lab 05) ou ser explorada em linguagem natural pelo **Genie** (Lab 06).
 
 > **No dia a dia do Curador de Dados:** sempre que você tiver uma lista de referência mantida em Excel (metas, cadastros, listas de CIDs, tabelas de-para), esse fluxo permite publicá-la rapidamente para análise — mantendo tudo governado no Unity Catalog e disponível para o restante da equipe.
 

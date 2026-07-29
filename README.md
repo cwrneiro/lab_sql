@@ -29,7 +29,7 @@ Este treinamento é executado no **workspace da própria Unimed Campinas** (não
 * Um **SQL Warehouse ligado** (ativo) para executar as consultas e notebooks.
 * **Permissão para criar tabelas** no seu schema de treinamento (necessária, por exemplo, para o carregamento das bases e o upload de CSV).
 
-> **Observação:** a criação de salas **Genie** pode estar restrita no workspace da Unimed. Caso o seu usuário não tenha essa permissão, o **Lab 07 (Genie)** será conduzido em **modo demo** pelo instrutor.
+> **Observação:** a criação de salas **Genie** pode estar restrita no workspace da Unimed. Caso o seu usuário não tenha essa permissão, o **Lab 06 (Genie)** será conduzido em **modo demo** pelo instrutor.
 
 ## Módulos do Treinamento
 
@@ -38,10 +38,11 @@ Os módulos são realizados na seguinte ordem ao longo do dia:
 1. **00_Abertura** — Boas-vindas, objetivos e visão geral do ambiente.
 2. **01_LAB_Query_Editor** — Primeiros passos no SQL Editor.
 3. **02_LAB_Notebook** — Importando e executando um Notebook para carregar as bases.
-4. **05_LAB_SQL_Gen_AI** — Assistente de SQL com IA generativa.
-5. **06_LAB_Dashboard** — Criação de dashboards AI/BI.
-6. **07_LAB_Genie** — Análise em linguagem natural com o Genie (modo demo se restrito).
-7. **08_LAB_Upload_CSV** — Carregando dados a partir de arquivos CSV.
+4. **03_LAB_Alert** — Criação de um alerta para monitorar um indicador (sinistros).
+5. **04_LAB_SQL_Gen_AI** — Assistente de SQL com IA generativa.
+6. **05_LAB_Dashboard** — Criação de dashboards AI/BI.
+7. **06_LAB_Genie** — Análise em linguagem natural com o Genie (modo demo se restrito).
+8. **07_LAB_Upload_CSV** — Carregando dados a partir de arquivos CSV.
 
 ## Webinar - Vídeo Youtube
 

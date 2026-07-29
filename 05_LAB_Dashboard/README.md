@@ -1,6 +1,6 @@
 <img src="https://raw.githubusercontent.com/Databricks-BR/genie_ai_bi/main/images/header_genie.png">
 
-# Hands-On LAB 06 - Criando o Dashboard AI/BI
+# Hands-On LAB 05 - Criando o Dashboard AI/BI
 
 Treinamento Hands-on na plataforma Databricks com foco nas funcionalidades de Análise Exploratória e Painéis.
 </br></br>
@@ -12,7 +12,7 @@ O objetivo desse laboratório é montar um Painel utilizando os dados de **sinis
 </br></br>
 
 
-## Exercício 06.01 - Criando o Dashboard
+## Exercício 05.01 - Criando o Dashboard
 
 No Menu Lateral, escolha a opção DASHBOARDS:
 
@@ -56,7 +56,7 @@ Um gráfico foi gerado como no exemplo abaixo:
 <img src="https://github.com/CaduBettanim/lab_sql/blob/main/images/v3_lab05_1.png?raw=true" width="800px">
 </br></br></br>
 
-## Exercício 06.02 - Adicionando um FILTRO de página
+## Exercício 05.02 - Adicionando um FILTRO de página
 
 Clique no menu azul suspenso no ícone de FILTRO.</br>
 Escolha o atributo (Field):  "**categoria_procedimento**"
@@ -65,7 +65,7 @@ Escolha o atributo (Field):  "**categoria_procedimento**"
 </br></br></br>
 
 
-## Exercício 06.03 - Alterando o título do painel por uma imagem
+## Exercício 05.03 - Alterando o título do painel por uma imagem
 
 Crie agora um novo objeto do tipo TEXT. No box que foi criado </br>
 insira o código (markdown) abaixo: </br>
@@ -89,7 +89,7 @@ Clique no botão "**Publish**" para publicar o Painel.
 </br></br></br>
 
 
-## Exercício 06.04 - Criando um NOVO contexto de dados com Genie Code
+## Exercício 05.04 - Criando um NOVO contexto de dados com Genie Code
 
 Vamos criar agora um novo contexto de dados.</br>
 Para isso, selecione novamente o ícone da Genie Code, </br>
@@ -136,7 +136,7 @@ o resultado esperado é uma tabela com os prestadores e seus totais de sinistro.
 <img src="https://raw.githubusercontent.com/Databricks-BR/genie_ai_bi/main/images/lab2_10.png" width="700px">
 </br></br></br>
 
-## Exercício 06.05 - Adicionando um novo Gráfico com o contexto novo de dados
+## Exercício 05.05 - Adicionando um novo Gráfico com o contexto novo de dados
 
 1. Clique no menu azul suspenso na posição inferior do painel, </br>
 no botão com o ícone de gráfico </br>

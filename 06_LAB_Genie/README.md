@@ -1,6 +1,6 @@
 <img src="https://raw.githubusercontent.com/Databricks-BR/genie_ai_bi/main/images/header_genie.png">
 
-# Hands-On LAB 07 - AI/BI Genie
+# Hands-On LAB 06 - AI/BI Genie
 
 Treinamento Hands-on na plataforma Databricks com foco nas funcionalidades de perguntas e respostas usando linguagem natural.
 
@@ -19,7 +19,7 @@ O objetivo desse laboratório é usar o AI/BI Genie para permitir a análise dos
 ***Caso os dados ainda não tenham sido carregados, execute antes o Lab 02 - LAB_Notebook.***
 </br></br>
 
-## Exercício 07.00 - Preparação
+## Exercício 06.00 - Preparação
 
 1. Em alguns momentos utilizaremos o SQL Editor. Deixe-o preparado em outra janela e selecione seu database.
 
@@ -27,7 +27,7 @@ O objetivo desse laboratório é usar o AI/BI Genie para permitir a análise dos
 
 </br></br>
 
-## Exercício 07.01 - Criar a AI/BI Genie **[DEMO – instrutor]**
+## Exercício 06.01 - Criar a AI/BI Genie **[DEMO – instrutor]**
 
 > A turma **não** executa esta seção — apenas acompanha. Ela mostra *como* uma sala é montada, para que os curadores entendam o que está por trás das respostas.
 
@@ -56,7 +56,7 @@ Vamos criar uma Genie para fazer nossas perguntas. Para isso, seguimos os passos
 
 </br></br>
 
-## Exercício 07.02 - Fazendo perguntas ao AI/BI Genie **[HANDS-ON – todos]**
+## Exercício 06.02 - Fazendo perguntas ao AI/BI Genie **[HANDS-ON – todos]**
 
 > Abra o **link da sala Genie compartilhado pelo instrutor** e faça as perguntas abaixo no chat.
 
@@ -82,7 +82,7 @@ Aproveitem para explorar e fazer perguntas adicionais!
 
 </br>
 
-## Exercício 07.03 - Usando comentários e *constraints* **[DEMO – instrutor]**
+## Exercício 06.03 - Usando comentários e *constraints* **[DEMO – instrutor]**
 
 > Seção conduzida pelo instrutor. Ilustra por que **documentar tabelas e definir chaves** (trabalho típico do curador de dados!) melhora as respostas da Genie.
 
@@ -115,7 +115,7 @@ Documentar tabelas com comentários é sempre uma boa prática, assim como atrib
 Isso ajuda a compreensão, a descoberta e o reaproveitamento dos dados por outras pessoas — e ainda melhora as respostas da Genie. **Esse é justamente o papel do curador de dados.**
 </br></br>
 
-## Exercício 07.04 - Usando instruções **[DEMO – instrutor]**
+## Exercício 06.04 - Usando instruções **[DEMO – instrutor]**
 
 Como vimos, a Genie usa toda a documentação das tabelas para responder. No entanto, por segurança, ela **não** tem acesso aos dados em si!
 
@@ -137,7 +137,7 @@ Pronto! Agora a Genie já responde perguntas sobre alta complexidade também!
 
 </br></br>
 
-## Exercício 07.05 - Usando funções **[DEMO – instrutor]**
+## Exercício 06.05 - Usando funções **[DEMO – instrutor]**
 
 Outro recurso para ajudar a Genie com cálculos complexos são as **funções**: guardam e parametrizam lógicas dentro do catálogo, reutilizáveis por outras pessoas e consultas — inclusive fora da Genie. Funcionam como ferramentas validadas e certificadas que a Genie pode decidir usar.
 

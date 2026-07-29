@@ -31,12 +31,11 @@ Roteiro de slides para a **abertura do Databricks Day - Treinamento para Curador
 - Tour de navegação da plataforma
 - Lab 01 - Query Editor (SQL)
 - Lab 02 - Notebook
-- Lab 03 - Query Profiler
-- Lab 04 - Alertas
-- Lab 05 - SQL + Gen AI
-- Lab 06 - Dashboards
-- Lab 07 - Genie
-- Lab 08 - Upload de CSV
+- Lab 03 - Alertas
+- Lab 04 - SQL + Gen AI
+- Lab 05 - Dashboards
+- Lab 06 - Genie
+- Lab 07 - Upload de CSV
 
 
 ---

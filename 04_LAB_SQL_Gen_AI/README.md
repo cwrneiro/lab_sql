@@ -1,11 +1,11 @@
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/header_handson_sql.png">
 
-# Hands-On LAB 05 - Funcionalidades de Generative AI no SQL
+# Hands-On LAB 04 - Funcionalidades de Generative AI no SQL
 
 Treinamento Hands-on na plataforma Databricks com foco nas funcionalidades de Analytics (SQL, Query, Dask, DataViz, SQL end-point).
 
 
-## Exercício 07.01 - Sobre as Funcionalidades:
+## Exercício 04.01 - Sobre as Funcionalidades:
 
 
 Uma forma de aplicar os modelos de IA Generativa é utilizar as Databricks AI SQL Functions.

@@ -37,7 +37,7 @@ pergunta no Genie).
   **placeholder** — trocar pelos valores reais quando o catálogo/schema de treino for
   definido. Busca global: `dbacademy`, `<seu_database>`, `<seu_usuario>`, `schema_name`.
 - **Criação de salas Genie pode ser restrita** para os participantes. Por isso o
-  `07_LAB_Genie` é dividido em **[DEMO – instrutor]** (criar/configurar a sala) e
+  `06_LAB_Genie` é dividido em **[DEMO – instrutor]** (criar/configurar a sala) e
   **[HANDS-ON – todos]** (só consumir uma sala pré-criada). Plano B: se nem o instrutor
   puder criar no workspace do cliente, rodar o lab inteiro como demo em ambiente próprio.
 
@@ -48,13 +48,15 @@ pergunta no Genie).
 | `00_Abertura/` | Roteiro de slides: objetivo, transacional × analítico, como os dados chegam, tour da plataforma, casos de IA em saúde | Markdown como slides; casos de IA são ilustrativos, **confirmar antes do evento** |
 | `01_LAB_Query_Editor/` | SQL Editor: DDL/DML com `tipo_plano` (segmentação ANS) + consultas às tabelas de saúde | Exs. 01.06–01.09 (Liquid Clustering/Time Travel) marcados **opcionais/demo** |
 | `02_LAB_Notebook/` | Notebook Python que **carrega os CSVs** de `dados/` como tabelas Delta | `lab02_01_carga_csv.ipynb` — ver "Dados" abaixo |
-| `05_LAB_SQL_Gen_AI/` | AI SQL Functions (`ai_gen`, `ai_analyze_sentiment`, etc.) sobre procedimentos | **Não** é o "Databricks Assistant"; são funções SQL de IA |
-| `06_LAB_Dashboard/` | AI/BI Dashboard: série temporal de sinistros + ranking de prestadores (via Genie Code) | Numeração `06.xx` |
-| `07_LAB_Genie/` | AI/BI Genie em modo DEMO + HANDS-ON | Ver restrição de ambiente acima |
-| `08_LAB_Upload_CSV/` | Upload de planilha pela UI → criar tabela → validar | Cliente pediu explicitamente; o aluno cria a tabela `metas_municipio` |
+| `03_LAB_Alert/` | Alerta do Databricks SQL: monitora o total de `vl_sinistro` dos últimos 30 dias | Adaptado do upstream (era `stock_bigtech`/AAPL) para o contexto de saúde |
+| `04_LAB_SQL_Gen_AI/` | AI SQL Functions (`ai_gen`, `ai_analyze_sentiment`, etc.) sobre procedimentos | **Não** é o "Databricks Assistant"; são funções SQL de IA |
+| `05_LAB_Dashboard/` | AI/BI Dashboard: série temporal de sinistros + ranking de prestadores (via Genie Code) | Numeração `05.xx` |
+| `06_LAB_Genie/` | AI/BI Genie em modo DEMO + HANDS-ON | Ver restrição de ambiente acima |
+| `07_LAB_Upload_CSV/` | Upload de planilha pela UI → criar tabela → validar | Cliente pediu explicitamente; o aluno cria a tabela `metas_municipio` |
 
-Os módulos **03 (Query Profiler)** e **04 (Alert)** do upstream foram **removidos**
-(avançados, fora do escopo básico). Não os reintroduza sem motivo.
+O módulo **Query Profiler** do upstream foi **removido** (avançado, fora do escopo
+básico). Não o reintroduza sem motivo. O módulo **Alert** foi **reintroduzido** como
+`03_LAB_Alert`, adaptado ao contexto de saúde.
 
 ## Dados (`dados/`)
 
@@ -83,12 +85,12 @@ id_procedimento, dt_atendimento, qt_procedimento, vl_sinistro)`;
 O upstream embute lições no formato dos dados. A adaptação as manteve no contexto de
 saúde — **não "conserte" isso sem querer**:
 
-1. **Join errado vs. certo (Lab 07 – constraints):** `sinistros.id_prestador` casa com
+1. **Join errado vs. certo (Lab 06 – constraints):** `sinistros.id_prestador` casa com
    `dim_prestador.cod` (a chave correta) e **NÃO** com `dim_prestador.id_prestador`.
    O lab ensina a adicionar a constraint correta. Verificado: 100% em `cod`, 0% em `id`.
-2. **Coluna mal nomeada (Lab 07):** o nome do prestador está em `dim_prestador.xpto`
+2. **Coluna mal nomeada (Lab 06):** o nome do prestador está em `dim_prestador.xpto`
    (de propósito); o lab ensina a documentar com `COMMENT`.
-3. **Jargão (Lab 07 – instruções):** "alta complexidade" = `categoria_procedimento IN
+3. **Jargão (Lab 06 – instruções):** "alta complexidade" = `categoria_procedimento IN
    ('INTERNACAO','CIRURGIA')` — não existe como valor literal; ensina instruções da Genie.
 4. **Taxa/proporção (`guias`):** `qt_autorizada / qt_solicitada` = taxa de autorização.
 
