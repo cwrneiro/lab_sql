@@ -30,16 +30,18 @@ pergunta no Genie).
 
 ## Restrições de ambiente (importantes)
 
-- Roda no **workspace do cliente**, **não** na Databricks Free Edition (o upstream assume
-  Free Edition — ao trazer mudanças do upstream, reverifique isso).
+- Roda na **Databricks Free Edition** (cada participante usa a própria conta gratuita),
+  igual à premissa do upstream. Chegou-se a considerar o workspace do cliente, mas a
+  criação de recursos (ex.: Genie) é restrita lá — por isso o workshop inteiro roda na
+  Free Edition.
 - Padrão de nomeação em todos os labs: **`dbacademy.<seu_database>.<tabela>`**
-  (`catalog_name = "dbacademy"`, `schema_name` = login/schema do usuário). Estão como
-  **placeholder** — trocar pelos valores reais quando o catálogo/schema de treino for
-  definido. Busca global: `dbacademy`, `<seu_database>`, `<seu_usuario>`, `schema_name`.
-- **Criação de salas Genie pode ser restrita** para os participantes. Por isso o
-  `06_LAB_Genie` é dividido em **[DEMO – instrutor]** (criar/configurar a sala) e
-  **[HANDS-ON – todos]** (só consumir uma sala pré-criada). Plano B: se nem o instrutor
-  puder criar no workspace do cliente, rodar o lab inteiro como demo em ambiente próprio.
+  (`catalog_name = "dbacademy"`, `schema_name` = login/schema do usuário), **como no repo
+  original** — cada aluno cria o próprio catálogo/schema no Lab 01. Mantidos como
+  placeholder de propósito. Busca global: `dbacademy`, `<seu_database>`, `<seu_usuario>`,
+  `schema_name`.
+- **Genie é hands-on para todos:** cada participante **cria e configura a própria sala
+  Genie** durante o workshop (não há sala pré-configurada). Por isso o `06_LAB_Genie` é
+  todo hands-on — sem divisão DEMO/HANDS-ON.
 
 ## Estrutura dos módulos (ordem do dia)
 
@@ -51,7 +53,7 @@ pergunta no Genie).
 | `03_LAB_Alert/` | Alerta do Databricks SQL: monitora o total de `vl_sinistro` dos últimos 30 dias | Adaptado do upstream (era `stock_bigtech`/AAPL) para o contexto de saúde |
 | `04_LAB_SQL_Gen_AI/` | AI SQL Functions (`ai_gen`, `ai_analyze_sentiment`, etc.) sobre procedimentos | **Não** é o "Databricks Assistant"; são funções SQL de IA |
 | `05_LAB_Dashboard/` | AI/BI Dashboard: série temporal de sinistros + ranking de prestadores (via Genie Code) | Numeração `05.xx` |
-| `06_LAB_Genie/` | AI/BI Genie em modo DEMO + HANDS-ON | Ver restrição de ambiente acima |
+| `06_LAB_Genie/` | AI/BI Genie — hands-on: cada participante cria a própria sala | Ver restrição de ambiente acima |
 | `07_LAB_Upload_CSV/` | Upload de planilha pela UI → criar tabela → validar | Cliente pediu explicitamente; o aluno cria a tabela `metas_municipio` |
 
 O módulo **Query Profiler** do upstream foi **removido** (avançado, fora do escopo
@@ -104,10 +106,13 @@ saúde — **não "conserte" isso sem querer**:
 
 ## Pendências (coordenação — fora do código)
 
-- [ ] Avisar o autor do repo upstream que houve fork/adaptação.
-- [ ] Confirmar com os donos do workspace do cliente se dá para criar Genie agent
-      (senão, preparar demo em ambiente próprio).
-- [ ] Definir `catalog_name`/`schema_name` reais e trocar os placeholders.
+- [x] ~~Avisar o autor do repo upstream que houve fork/adaptação.~~ Não é necessário.
+- [x] ~~Confirmar com os donos do workspace do cliente se dá para criar Genie agent.~~
+      Confirmado que **não dá** — o workshop roda inteiro na **Databricks Free Edition**.
+- [x] ~~Definir `catalog_name`/`schema_name` reais e trocar os placeholders.~~ Mantidos
+      **como no repo original** (aluno cria o próprio no Lab 01) — sem troca.
+- [x] ~~Preparar a sala Genie pré-configurada para o hands-on.~~ Não haverá sala
+      pré-configurada — **cada participante cria a própria** durante o workshop (Lab 06).
 - [ ] Selecionar/confirmar os casos reais de sucesso de IA em saúde para a abertura.
-- [ ] Dry run (acessos, upload de CSV, SQL warehouse) antes do evento.
-- [ ] Preparar a sala Genie pré-configurada (tabelas + instruções) para o hands-on.
+      (Ainda **não confirmados**.)
+- [ ] Dry run (acessos, upload de CSV, SQL warehouse) — previsto para **2026-08-06**.

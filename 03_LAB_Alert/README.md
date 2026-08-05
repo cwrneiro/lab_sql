@@ -53,7 +53,7 @@ Configure conforme a imagem abaixo:
 * Não esqueça de nomear seu alerta. Sugestão: **"Alerta_Sinistros_"** + `<SEU_LOGIN>`, e
   clique em **CREATE**.
 
-* No campo **Notify**, coloque o e-mail usado no seu login do workspace da Unimed Campinas.
+* No campo **Notify**, coloque o e-mail usado no seu login da Databricks Free Edition.
 
 <img src="https://github.com/Gabriel-Rangel/lab_sql/blob/main/images/v2_lab04_3.png?raw=true" style="height: 700px;">
 

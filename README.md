@@ -20,16 +20,16 @@ o **AI/BI** é um pacote de ferramentas de Business Intelligende integrados e fo
 </br></br> 
 
 ## Ambiente do Laboratório
-Este treinamento é executado no **workspace da própria Unimed Campinas** (não utilizamos mais a Databricks Free Edition). Cada participante trabalha no ambiente corporativo, com os dados e as políticas de acesso já provisionados pela equipe de plataforma.
+Este treinamento é executado na **Databricks Free Edition**, uma versão gratuita do Databricks ideal para aprendizado, prototipagem e exploração colaborativa. Cada participante usa a sua própria conta gratuita ao longo do dia.
+
+**Crie sua conta [aqui](https://login.databricks.com/?dbx_source=docs&intent=SIGN_UP&provider=DB_FREE_TIER)**
 
 **Pré-requisitos:**
 
-* **Acesso ao workspace Databricks da Unimed Campinas** (login corporativo / SSO).
-* Um **catálogo e schema de treinamento** para o seu usuário. Os labs seguem o padrão `dbacademy.<seu_database>` — use o schema indicado pelo instrutor.
-* Um **SQL Warehouse ligado** (ativo) para executar as consultas e notebooks.
-* **Permissão para criar tabelas** no seu schema de treinamento (necessária, por exemplo, para o carregamento das bases e o upload de CSV).
+* Uma **conta Databricks Free Edition** (criada no link acima).
+* Os labs seguem o padrão de nomeação `dbacademy.<seu_database>` — você cria o seu próprio catálogo/schema no Lab 01.
 
-> **Observação:** a criação de salas **Genie** pode estar restrita no workspace da Unimed. Caso o seu usuário não tenha essa permissão, o **Lab 06 (Genie)** será conduzido em **modo demo** pelo instrutor.
+> **Observação:** o **Lab 06 (Genie)** é hands-on para todos — cada participante cria a sua própria sala Genie durante o workshop.
 
 ## Módulos do Treinamento
 
@@ -41,7 +41,7 @@ Os módulos são realizados na seguinte ordem ao longo do dia:
 4. **03_LAB_Alert** — Criação de um alerta para monitorar um indicador (sinistros).
 5. **04_LAB_SQL_Gen_AI** — Assistente de SQL com IA generativa.
 6. **05_LAB_Dashboard** — Criação de dashboards AI/BI.
-7. **06_LAB_Genie** — Análise em linguagem natural com o Genie (modo demo se restrito).
+7. **06_LAB_Genie** — Análise em linguagem natural com o Genie (cada participante cria a sua sala).
 8. **07_LAB_Upload_CSV** — Carregando dados a partir de arquivos CSV.
 
 ## Webinar - Vídeo Youtube

@@ -6,12 +6,8 @@ Treinamento Hands-on na plataforma Databricks com foco nas funcionalidades de pe
 
 </br></br>
 
-> ⚠️ **Nota para a turma da Unimed Campinas**
-> Neste ambiente os participantes **não têm permissão para criar salas Genie** (`Genie space`). Por isso este laboratório é dividido em dois modos:
-> - **[DEMO – instrutor]** — passos de criação/configuração da sala. O instrutor executa e projeta; a turma acompanha.
-> - **[HANDS-ON – todos]** — fazer perguntas em uma sala Genie **já criada e compartilhada** pelo instrutor. É aqui que a turma pratica.
->
-> **Pré-requisito do instrutor:** criar a Genie Space sobre as tabelas de saúde **antes** do treinamento e compartilhar o link com a turma (permissão *Can run*). Caso a criação de salas também esteja bloqueada para o instrutor no workspace, rode o laboratório inteiro como demonstração a partir de um ambiente próprio (plano B combinado no projeto UCDD).
+> ℹ️ **Nota para a turma da Unimed Campinas**
+> Este laboratório é **hands-on para todos**: cada participante **cria e configura a sua própria sala Genie** (`Genie space`) durante o workshop, na **Databricks Free Edition**. Não há sala pré-configurada — você monta a sua do zero e faz as perguntas nela.
 
 ## Objetivos do Exercício
 
@@ -27,11 +23,9 @@ O objetivo desse laboratório é usar o AI/BI Genie para permitir a análise dos
 
 </br></br>
 
-## Exercício 06.01 - Criar a AI/BI Genie **[DEMO – instrutor]**
+## Exercício 06.01 - Criar a AI/BI Genie
 
-> A turma **não** executa esta seção — apenas acompanha. Ela mostra *como* uma sala é montada, para que os curadores entendam o que está por trás das respostas.
-
-Vamos criar uma Genie para fazer nossas perguntas. Para isso, seguimos os passos abaixo:
+Vamos criar uma Genie para fazer nossas perguntas. Para isso, siga os passos abaixo:
 
 1. No menu principal (à esquerda), clique em `New` > `Genie space`
 
@@ -56,9 +50,9 @@ Vamos criar uma Genie para fazer nossas perguntas. Para isso, seguimos os passos
 
 </br></br>
 
-## Exercício 06.02 - Fazendo perguntas ao AI/BI Genie **[HANDS-ON – todos]**
+## Exercício 06.02 - Fazendo perguntas ao AI/BI Genie
 
-> Abra o **link da sala Genie compartilhado pelo instrutor** e faça as perguntas abaixo no chat.
+> Na **sala Genie que você acabou de criar**, faça as perguntas abaixo no chat.
 
 - Qual o valor total de sinistros em jun/2025?
 - Agora, quebre por categoria de procedimento
@@ -82,9 +76,9 @@ Aproveitem para explorar e fazer perguntas adicionais!
 
 </br>
 
-## Exercício 06.03 - Usando comentários e *constraints* **[DEMO – instrutor]**
+## Exercício 06.03 - Usando comentários e *constraints*
 
-> Seção conduzida pelo instrutor. Ilustra por que **documentar tabelas e definir chaves** (trabalho típico do curador de dados!) melhora as respostas da Genie.
+> Este exercício mostra por que **documentar tabelas e definir chaves** (trabalho típico do curador de dados!) melhora as respostas da Genie.
 
 Podem ocorrer cenários onde precisamos fornecer contexto adicional à Genie para respostas mais precisas.
 
@@ -115,7 +109,7 @@ Documentar tabelas com comentários é sempre uma boa prática, assim como atrib
 Isso ajuda a compreensão, a descoberta e o reaproveitamento dos dados por outras pessoas — e ainda melhora as respostas da Genie. **Esse é justamente o papel do curador de dados.**
 </br></br>
 
-## Exercício 06.04 - Usando instruções **[DEMO – instrutor]**
+## Exercício 06.04 - Usando instruções
 
 Como vimos, a Genie usa toda a documentação das tabelas para responder. No entanto, por segurança, ela **não** tem acesso aos dados em si!
 
@@ -137,7 +131,7 @@ Pronto! Agora a Genie já responde perguntas sobre alta complexidade também!
 
 </br></br>
 
-## Exercício 06.05 - Usando funções **[DEMO – instrutor]**
+## Exercício 06.05 - Usando funções
 
 Outro recurso para ajudar a Genie com cálculos complexos são as **funções**: guardam e parametrizam lógicas dentro do catálogo, reutilizáveis por outras pessoas e consultas — inclusive fora da Genie. Funcionam como ferramentas validadas e certificadas que a Genie pode decidir usar.
 
