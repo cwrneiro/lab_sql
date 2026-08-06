@@ -34,9 +34,19 @@ N_PROCEDIMENTOS = 400
 N_SINISTROS = 40_000
 N_GUIAS = 10_000
 
-DT_INI = date(2025, 1, 1)
-DT_FIM = date(2025, 12, 31)
+# Janela ROLANTE: os dados terminam "hoje" e cobrem os 12 meses anteriores.
+# Assim o alerta do Lab 03 (SUM dos últimos 30 dias via current_date()) sempre
+# tem dados recentes, independentemente de quando a turma rodar o lab.
+# Efeito colateral: regenerar em outro dia produz datas diferentes (a seed fixa
+# garante o MESMO conjunto relativo, mas deslocado no tempo). Rode o gerador e
+# faça `git push` dos CSVs pouco antes do evento.
+DT_FIM = date.today()
+DT_INI = DT_FIM - timedelta(days=365)
 DIAS = (DT_FIM - DT_INI).days
+
+# Adesão dos beneficiários: histórica, sempre ANTES da janela de atendimentos.
+DT_ADESAO_INI = date(2018, 1, 1)
+DIAS_ADESAO = (DT_INI - DT_ADESAO_INI).days
 
 
 def data_aleatoria():
@@ -172,7 +182,7 @@ for i in range(1, N_BENEFICIARIOS + 1):
         "sexo": random.choice(SEXOS),
         "faixa_etaria": random.choice(FAIXAS),
         "municipio": random.choice(MUNICIPIOS),
-        "dt_adesao": (date(2018, 1, 1) + timedelta(days=random.randint(0, 2900))).isoformat(),
+        "dt_adesao": (DT_ADESAO_INI + timedelta(days=random.randint(0, DIAS_ADESAO))).isoformat(),
     })
 
 with open(os.path.join(OUT, "dim_beneficiario.csv"), "w", newline="", encoding="utf-8") as f:

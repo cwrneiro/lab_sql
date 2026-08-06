@@ -26,15 +26,14 @@ Na janela de importação, clique na opção "**URL**".
 No campo texto da URL, digite o endereço do LINK destacado abaixo:
 
 ``` html
-https://github.com/CaduBettanim/lab_sql/blob/main/02_LAB_Notebook/lab02_01_carga_csv.ipynb
+https://github.com/cwrneiro/lab_sql/blob/unimed-campinas/02_LAB_Notebook/lab02_01_carga_csv.ipynb
 ```
 Conforme a figura abaixo:
 </br></br>
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab02_2.png" style="height: 250px;">>
 </br></br>
-* Altere a variável com o nome do seu login  (SCHEMA), conforme figura abaixo.
-* Não esqueça de tirar o caracter "#" (jogo da velha) da frente da linha.
-* Verifique se o Cluster (máquina virtual que executará o processo) está Atachada (barra superior ao lado do botão "Run All"). 
+* Na célula indicada, troque `COLOQUE_SEU_USUARIO_AQUI` pelo nome do seu login / schema (a variável `schema_name`), conforme figura abaixo. As células que criam o catálogo/schema já vêm ativas — não precisa descomentar nada.
+* Verifique se há um **compute serverless** atachado (barra superior, ao lado do botão "Run all"). Na Databricks Free Edition o **Serverless Starter Warehouse** é anexado automaticamente; se estiver suspenso, ele inicia sozinho na primeira execução (pode levar alguns segundos). 
 </br></br>
 <img src="https://github.com/Gabriel-Rangel/lab_sql/blob/main/images/v2_lab02_3.png?raw=true">
 </br></br>

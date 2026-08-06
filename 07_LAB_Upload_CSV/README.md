@@ -45,8 +45,8 @@ Indaiatuba,5300,2026
 Agora vamos subir o arquivo `metas_municipio.csv` usando a UI do Databricks. Nenhum código é necessário nesta etapa.
 
 1. No topo do menu lateral, clique no botão **"+ New"** (Novo).
-2. Escolha a opção **"Add or upload data"** (Adicionar ou carregar dados).
-3. Na tela que abrir, selecione **"Create or modify table"** (Criar ou modificar tabela) — essa é a opção para subir um arquivo e virar tabela.
+2. Escolha a opção **"Upload data"** (na interface atual; em versões anteriores aparecia como *"Add or upload data"*).
+3. Na tela **"Add data"** que abrir, selecione **"Create or modify table"** (Criar ou modificar tabela) — essa é a opção para subir um arquivo e virar tabela.
 4. **Selecione o arquivo**: arraste o `metas_municipio.csv` para a área indicada **ou** clique para procurá-lo no seu computador.
 5. Aguarde o upload. O Databricks vai ler o arquivo e mostrar uma **prévia dos dados** já organizados em colunas.
 

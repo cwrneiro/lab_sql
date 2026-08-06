@@ -14,15 +14,13 @@ O objetivo desse laboratório é montar um Painel utilizando os dados de **sinis
 
 ## Exercício 05.01 - Criando o Dashboard
 
-No Menu Lateral, escolha a opção DASHBOARDS:
-
-Clique na opção **CREATE DASHBOARD**
+No Menu Lateral, escolha a opção **Dashboards** (ou **+ New → Dashboard**).
 
 Na tela do Dashboard, clique na ABA **"Data"** para adicionar uma fonte de dados:
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_ai_01.png" style="height: 300px;"></br>
 
-1 - Escolha a opção *"Create from SQL"*
+1 - Clique em **"Add SQL dataset"** (na interface atual; em versões anteriores aparecia como *"Create from SQL"*).
 
 2 - Copie a consulta abaixo e cole no editor (não se esqueça de incluir seu banco de dados)
 ``` md

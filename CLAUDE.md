@@ -63,7 +63,12 @@ básico). Não o reintroduza sem motivo. O módulo **Alert** foi **reintroduzido
 ## Dados (`dados/`)
 
 Dataset **sintético** de operadora de saúde, gerado por **`dados/gerar_dados_saude.py`**
-(seed fixa = reprodutível; **sem PII** — nomes tipo `BENEFICIARIO 00001`). Para
+(seed fixa; **sem PII** — nomes tipo `BENEFICIARIO 00001`). **Datas em janela rolante:**
+`sinistros.dt_atendimento` e `guias.dt_solicitacao` vão de `hoje-365d` até `date.today()`
+(e `dt_adesao` é histórica, anterior à janela). Isso mantém o alerta do Lab 03
+(`current_date() - INTERVAL 30 DAYS`) sempre com dados recentes. **Consequência:** os
+dados **não são mais reprodutíveis entre dias** — regenere e faça `git push` dos CSVs
+**pouco antes do evento**. Para
 regenerar: `python3 dados/gerar_dados_saude.py`. O notebook do Lab 02 lê os CSVs via URL
 raw do GitHub (branch `unimed-campinas`) — **mudanças em `dados/` só chegam ao notebook
 após `git push`**.
@@ -113,6 +118,15 @@ saúde — **não "conserte" isso sem querer**:
       **como no repo original** (aluno cria o próprio no Lab 01) — sem troca.
 - [x] ~~Preparar a sala Genie pré-configurada para o hands-on.~~ Não haverá sala
       pré-configurada — **cada participante cria a própria** durante o workshop (Lab 06).
+- [x] ~~Dry run (acessos, upload de CSV, SQL warehouse).~~ Feito em **2026-08-06** na
+      Free Edition — **todos os 7 labs rodaram de ponta a ponta**. Correções aplicadas:
+      janela rolante de datas (Lab 03), CREATE catálogo/schema ativos (Labs 01/02), URL do
+      notebook para o fork (Lab 02), termos de UI atualizados (Alerts/Genie Agents/Add SQL
+      dataset/Upload data).
 - [ ] Selecionar/confirmar os casos reais de sucesso de IA em saúde para a abertura.
       (Ainda **não confirmados**.)
-- [ ] Dry run (acessos, upload de CSV, SQL warehouse) — previsto para **2026-08-06**.
+- [ ] **Regenerar os CSVs e `git push` pouco antes do evento** (datas em janela rolante —
+      ver seção "Dados").
+- [ ] **Atualizar os screenshots** dos labs para a UI atual (Alert em editor, Genie
+      Agents, "Add SQL dataset", "Upload data") — textos já ajustados; prints são o
+      próximo passo.

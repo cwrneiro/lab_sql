@@ -7,7 +7,9 @@ Treinamento Hands-on na plataforma Databricks com foco nas funcionalidades de pe
 </br></br>
 
 > ℹ️ **Nota para a turma da Unimed Campinas**
-> Este laboratório é **hands-on para todos**: cada participante **cria e configura a sua própria sala Genie** (`Genie space`) durante o workshop, na **Databricks Free Edition**. Não há sala pré-configurada — você monta a sua do zero e faz as perguntas nela.
+> Este laboratório é **hands-on para todos**: cada participante **cria e configura o seu próprio Genie Agent** durante o workshop, na **Databricks Free Edition**. Não há sala pré-configurada — você monta a sua do zero e faz as perguntas nela.
+>
+> **Terminologia:** o recurso hoje se chama **"Genie Agents"** no menu lateral (antes era "Genie space" / "sala Genie"). As instruções, comentários e funções que veremos ficam no botão **"Configure"** do agente.
 
 ## Objetivos do Exercício
 
@@ -25,24 +27,23 @@ O objetivo desse laboratório é usar o AI/BI Genie para permitir a análise dos
 
 ## Exercício 06.01 - Criar a AI/BI Genie
 
-Vamos criar uma Genie para fazer nossas perguntas. Para isso, siga os passos abaixo:
+Vamos criar um Genie Agent para fazer nossas perguntas. Para isso, siga os passos abaixo:
 
-1. No menu principal (à esquerda), clique em `New` > `Genie space`
+1. No menu lateral, clique em **"Genie Agents"** e depois no botão **"+ New"**.
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/genie_ai_bi/main/images/genie_01.png" width=300><br><br>
 
-2. Configure a Genie
-    - Selecione as seguintes tabelas:
-        - `sinistros`
-        - `guias`
-        - `dim_beneficiario`
-        - `dim_procedimento`
-        - `dim_prestador`
-    - Clique em `Create`
+2. Na janela **"Connect your data"**, busque e selecione as seguintes tabelas (do seu schema `dbacademy.<seu_database>`):
+    - `sinistros`
+    - `guias`
+    - `dim_beneficiario`
+    - `dim_procedimento`
+    - `dim_prestador`
+    - Clique em **`Create`**
 
-3. Altere o nome da Genie Space (ex.: **"Genie — Operadora de Saúde"**).
+3. O agente é criado com um nome sugerido automaticamente — você pode renomeá-lo (ex.: **"Genie — Operadora de Saúde"**).
 
-4. Clique em **Instructions** e atribua a instrução para que as respostas sejam em português:
+4. Clique em **Configure** e, em **Instructions**, atribua a instrução para que as respostas sejam em português:
 
     ``` %md
     * responda em português (Brasil)
@@ -52,7 +53,7 @@ Vamos criar uma Genie para fazer nossas perguntas. Para isso, siga os passos aba
 
 ## Exercício 06.02 - Fazendo perguntas ao AI/BI Genie
 
-> Na **sala Genie que você acabou de criar**, faça as perguntas abaixo no chat.
+> No **Genie Agent que você acabou de criar**, faça as perguntas abaixo no chat.
 
 - Qual o valor total de sinistros em jun/2025?
 - Agora, quebre por categoria de procedimento
@@ -157,7 +158,7 @@ Outro recurso para ajudar a Genie com cálculos complexos são as **funções**:
     GROUP BY ALL
     ```
 
-3. Adicione a função à Genie: clique na seta para baixo ao lado de `Add` e selecione `SQL function`.
+3. Adicione a função ao agente: em **Configure**, no menu de adicionar contexto (seta ao lado de `Add`), selecione `SQL function`.
 
 <img src="https://github.com/Gabriel-Rangel/lab_sql/blob/main/images/v2_genie_9.png?raw=true">
 </br>

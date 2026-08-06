@@ -19,46 +19,43 @@ qualquer indicador que mereça atenção sem depender de alguém olhando o paine
 
 ## Exercício 03.01 - Criando o Alerta
 
-Vamos utilizar a opção do menu **"ALERTS"**.
+No menu lateral, clique em **"Alerts"**.
 
-<img src="https://github.com/Gabriel-Rangel/lab_sql/blob/main/images/v2_lab04_1.png?raw=true" style="height: 200px;">
+> ℹ️ **Interface atual:** a tela de Alertas tem duas abas — **"Alerts"** (a experiência
+> nova, que usaremos) e **"Legacy alerts"** (a antiga). Fique na aba **"Alerts"** e clique
+> em **"Create alert"**. Você cai em um editor com três passos: **1) escrever e rodar a
+> query → 2) configurar a condição → 3) agendar o alerta**.
 
 </br></br>
 
-Clique no botão **CREATE ALERT**.
-
-O SQL Editor agora é integrado ao Alerta. Copie a query abaixo e clique em **RUN**.
-
-A consulta calcula o **total de sinistros dos últimos 30 dias**, que será o valor
-monitorado pelo alerta:
+**1) Escreva e rode a query.** Copie a consulta abaixo no editor e clique em **Run all**.
+Ela calcula o **total de sinistros dos últimos 30 dias**, que será o valor monitorado:
 
 ``` sql
-
 SELECT SUM(vl_sinistro) AS total_sinistros_30d
 FROM dbacademy.<seu_database>.sinistros
 WHERE dt_atendimento >= current_date() - INTERVAL 30 DAYS;
-
 ```
 
-<img src="https://github.com/Gabriel-Rangel/lab_sql/blob/main/images/v2_lab04_2.png?raw=true">
+> Se aparecer um aviso para iniciar o compute, confirme **"Start, attach and run"** — o
+> **Serverless Starter Warehouse** liga sozinho (pode levar alguns segundos no primeiro uso).
+
 </br></br>
 
-Com a query rodando com sucesso, a parte de configuração à esquerda será habilitada.
-Configure conforme a imagem abaixo:
+**2) Configure a condição** (painel **Condition**, à direita):
 
-* Defina a condição de disparo: acione o alerta quando **`total_sinistros_30d`** for
-  **maior que** um limite de sua escolha (por exemplo, `100000`). Ajuste o valor conforme
-  o resultado que a query retornou para que dê para ver o alerta mudar de estado.
+* Em **Trigger alert when**, escolha **First row** / coluna **`total_sinistros_30d`**.
+* Escolha o operador **`>`** (maior que) e, em **Static Value**, informe um limite de sua
+  escolha (por exemplo, `50000000`). Ajuste o valor conforme o resultado que a query
+  retornou, para conseguir ver o alerta mudar de estado.
+* (Opcional) Em **Notifications → Notify**, adicione o e-mail usado no seu login da
+  Databricks Free Edition.
 
-* Não esqueça de nomear seu alerta. Sugestão: **"Alerta_Sinistros_"** + `<SEU_LOGIN>`, e
-  clique em **CREATE**.
-
-* No campo **Notify**, coloque o e-mail usado no seu login da Databricks Free Edition.
-
-<img src="https://github.com/Gabriel-Rangel/lab_sql/blob/main/images/v2_lab04_3.png?raw=true" style="height: 700px;">
+**3) (Opcional) Agende o alerta** para que ele seja avaliado periodicamente, e dê um nome
+ao alerta (sugestão: **"Alerta_Sinistros_"** + `<SEU_LOGIN>`). Clique em **Create** / salve.
 
 </br></br>
 
 > ℹ️ **Dica:** o alerta só notifica quando **muda de estado** (por exemplo, de "OK" para
 > "acionado"). Para testar, defina um limite abaixo do valor atual da query e observe o
-> alerta ser acionado na próxima verificação.
+> alerta ser acionado.
