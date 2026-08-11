@@ -55,13 +55,13 @@ Vamos criar um Genie Agent para fazer nossas perguntas. Para isso, siga os passo
 
 > No **Genie Agent que você acabou de criar**, faça as perguntas abaixo no chat.
 
-- Qual o valor total de sinistros em jun/2025?
+- Qual o valor total de sinistros nos últimos 12 meses?
 - Agora, quebre por categoria de procedimento
 - Mantenha somente as 10 categorias com maior valor
 - Qual o total de procedimentos realizados de exames?
 - Qual o valor total de sinistros de internações?
 - Quais os 5 municípios de beneficiários com maior valor de sinistro?
-- Qual a taxa de autorização das guias (autorizadas sobre solicitadas) em 2025?
+- Qual a taxa de autorização das guias (autorizadas sobre solicitadas) nos últimos 12 meses?
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/genie_ai_bi/main/images/genie_05.png"><br><br>
 

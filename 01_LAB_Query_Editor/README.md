@@ -37,13 +37,13 @@ Os exercícios deverão ser executados na opção do Menu lateral "**SQL Editor*
 CREATE CATALOG IF NOT EXISTS dbacademy;
 USE CATALOG dbacademy;
 
-CREATE DATABASE IF NOT EXISTS <seu_usuario>;
-USE <seu_usuario>;
+CREATE DATABASE IF NOT EXISTS <seu_database>;
+USE <seu_database>;
 ```
 
 ## Exercício 01.02 - Criação da Tabela
 1. Na primeira query do laboratório realizamos a criação de catálago e database e utilizamos a cláusula *USE*, mas ela só é persistida em tempo de execução;
-2. Devemos sempre atribuir o nome do catálago e database antes do nome da tabela separado por "." (catalogo.<seu_usuario>.tipo_plano)</br>
+2. Devemos sempre atribuir o nome do catálago e database antes do nome da tabela separado por "." (catalogo.<seu_database>.tipo_plano)</br>
 ou podemos especificar o catálago e database que queremos usar no próprio editor conforme imagem abaixo:
 </br></br>
 <img src="https://github.com/CaduBettanim/lab_sql/blob/4af0ea650f77b5feb29dcccca0c0bb5da6850d0a/images/v3_lab01_setcatalago.png?raw=true">

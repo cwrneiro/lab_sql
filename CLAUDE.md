@@ -37,8 +37,10 @@ pergunta no Genie).
 - Padrão de nomeação em todos os labs: **`dbacademy.<seu_database>.<tabela>`**
   (`catalog_name = "dbacademy"`, `schema_name` = login/schema do usuário), **como no repo
   original** — cada aluno cria o próprio catálogo/schema no Lab 01. Mantidos como
-  placeholder de propósito. Busca global: `dbacademy`, `<seu_database>`, `<seu_usuario>`,
-  `schema_name`.
+  placeholder de propósito, **padronizado em `<seu_database>`** em todos os READMEs (o
+  notebook do Lab 02 usa a variável `schema_name` com o placeholder
+  `COLOQUE_SEU_USUARIO_AQUI`). Busca global: `dbacademy`, `<seu_database>`, `schema_name`,
+  `COLOQUE_SEU_USUARIO_AQUI`.
 - **Genie é hands-on para todos:** cada participante **cria e configura a própria sala
   Genie** durante o workshop (não há sala pré-configurada). Por isso o `06_LAB_Genie` é
   todo hands-on — sem divisão DEMO/HANDS-ON.
