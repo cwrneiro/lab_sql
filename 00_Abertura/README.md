@@ -1,14 +1,6 @@
 # 00 - Abertura e Contextualização
 
-Roteiro de slides para a **abertura do Databricks Day - Treinamento para Curadores de Dados (Unimed Campinas)**.
-
-> Este documento é um **roteiro de slides** (não é o PPT final). Cada slide traz o título e os bullets de conteúdo. Use-o para montar os slides e conduzir a abertura antes dos hands-on.
->
-> Público-alvo: **Curadores de Dados** de nível básico, boa parte vinda do mundo do **Excel**. Linguagem simples, sem jargão. Duração sugerida da abertura: **30-40 min**.
-
----
-
-## Slide 1 — Boas-vindas
+## 1 — Boas-vindas
 
 - **Databricks Day**
 - **Treinamento para Curadores de Dados**
@@ -17,7 +9,7 @@ Roteiro de slides para a **abertura do Databricks Day - Treinamento para Curador
 
 ---
 
-## Slide 2 — Objetivos do treinamento + Agenda do dia
+## 2 — Objetivos do treinamento + Agenda do dia
 
 **O que você vai aprender hoje:**
 - Entender o que é a plataforma Databricks e por que a usamos
@@ -38,7 +30,7 @@ Roteiro de slides para a **abertura do Databricks Day - Treinamento para Curador
 
 ---
 
-## Slide 3 — Quem somos / O papel do Curador de Dados
+## 3 — Quem somos / O papel do Curador de Dados
 
 - **Curador de dados** = quem cuida da qualidade, do significado e do bom uso dos dados
 - Você é a ponte entre **quem gera o dado** e **quem toma decisão** com ele
@@ -47,7 +39,7 @@ Roteiro de slides para a **abertura do Databricks Day - Treinamento para Curador
 
 ---
 
-## Slide 4 — Ambiente transacional × Ambiente analítico
+## 4 — Ambiente transacional × Ambiente analítico
 
 **Ambiente transacional** (o sistema do dia a dia)
 - Registra as operações **na hora que acontecem**: autorização de guia, cadastro de beneficiário, atendimento
@@ -65,7 +57,7 @@ Roteiro de slides para a **abertura do Databricks Day - Treinamento para Curador
 
 ---
 
-## Slide 5 — Como os dados chegam ao Databricks
+## 5 — Como os dados chegam ao Databricks
 
 Fluxo macro (conceitual, sem detalhes técnicos):
 
@@ -81,7 +73,7 @@ Fluxo macro (conceitual, sem detalhes técnicos):
 
 ---
 
-## Slide 6 — Tour da plataforma: Workspace
+## 6 — Tour da plataforma: Workspace
 
 - **O que é:** o seu "escritório" dentro do Databricks — a área onde você trabalha
 - Reúne suas consultas, notebooks, dashboards e pastas
@@ -90,7 +82,7 @@ Fluxo macro (conceitual, sem detalhes técnicos):
 
 ---
 
-## Slide 7 — Tour da plataforma: Catálogo (Catalog)
+## 7 — Tour da plataforma: Catálogo (Catalog)
 
 - **O que é:** o nível mais alto de organização dos dados — a "estante" principal
 - Agrupa vários schemas relacionados
@@ -99,7 +91,7 @@ Fluxo macro (conceitual, sem detalhes técnicos):
 
 ---
 
-## Slide 8 — Tour da plataforma: Schema (Database)
+## 8 — Tour da plataforma: Schema (Database)
 
 - **O que é:** uma divisão dentro do catálogo que agrupa tabelas de um mesmo assunto
 - Ex.: um schema para "beneficiários", outro para "autorizações"
@@ -108,7 +100,7 @@ Fluxo macro (conceitual, sem detalhes técnicos):
 
 ---
 
-## Slide 9 — Tour da plataforma: Tabelas (Tables)
+## 9 — Tour da plataforma: Tabelas (Tables)
 
 - **O que é:** onde os dados de fato ficam, em **linhas e colunas**
 - Muito parecido com uma **planilha do Excel**: cada linha um registro, cada coluna um campo
@@ -117,7 +109,7 @@ Fluxo macro (conceitual, sem detalhes técnicos):
 
 ---
 
-## Slide 10 — Tour da plataforma: Notebook
+## 10 — Tour da plataforma: Notebook
 
 - **O que é:** um documento interativo onde você escreve consultas (SQL) e vê os resultados logo abaixo
 - Permite misturar **código, texto explicativo e gráficos** no mesmo lugar
@@ -126,7 +118,7 @@ Fluxo macro (conceitual, sem detalhes técnicos):
 
 ---
 
-## Slide 11 — Tour da plataforma: Dashboards (AI/BI)
+## 11 — Tour da plataforma: Dashboards (AI/BI)
 
 - **O que é:** painéis visuais com gráficos, números e tabelas para acompanhar indicadores
 - Contam a "história dos dados" de forma visual, fáceis de **compartilhar** com a equipe
@@ -136,7 +128,7 @@ Fluxo macro (conceitual, sem detalhes técnicos):
 
 ---
 
-## Slide 12 — Casos de sucesso de IA em saúde (ilustrativos)
+## 12 — Casos de sucesso de IA em saúde (ilustrativos)
 
 > **Atenção:** exemplos **ilustrativos e genéricos** do uso de IA/analytics em operadoras e planos de saúde. **Confirmar/atualizar** com casos reais e números antes do evento.
 
@@ -146,7 +138,7 @@ Fluxo macro (conceitual, sem detalhes técnicos):
 
 ---
 
-## Slide 13 — Vamos para a prática!
+## 13 — Vamos para a prática!
 
 - Agora começa o **hands-on**
 - Todos com acesso ao ambiente? Login funcionando?
