@@ -2,7 +2,7 @@
 
 Roteiro de slides para a **abertura do Databricks Day - Treinamento para Curadores de Dados (Unimed Campinas)**.
 
-> Este documento é um **roteiro de slides** (não é o PPT final). Cada slide traz o título, os bullets de conteúdo e uma *nota de fala* para o apresentador. Use-o para montar os slides e conduzir a abertura antes dos hands-on.
+> Este documento é um **roteiro de slides** (não é o PPT final). Cada slide traz o título e os bullets de conteúdo. Use-o para montar os slides e conduzir a abertura antes dos hands-on.
 >
 > Público-alvo: **Curadores de Dados** de nível básico, boa parte vinda do mundo do **Excel**. Linguagem simples, sem jargão. Duração sugerida da abertura: **30-40 min**.
 
@@ -14,7 +14,6 @@ Roteiro de slides para a **abertura do Databricks Day - Treinamento para Curador
 - **Treinamento para Curadores de Dados**
 - **Unimed Campinas**
 - Um dia inteiro, mão na massa (hands-on)
-
 
 ---
 
@@ -37,7 +36,6 @@ Roteiro de slides para a **abertura do Databricks Day - Treinamento para Curador
 - Lab 06 - Genie
 - Lab 07 - Upload de CSV
 
-
 ---
 
 ## Slide 3 — Quem somos / O papel do Curador de Dados
@@ -46,7 +44,6 @@ Roteiro de slides para a **abertura do Databricks Day - Treinamento para Curador
 - Você é a ponte entre **quem gera o dado** e **quem toma decisão** com ele
 - No dia a dia: entender de onde vem o dado, garantir que está correto, organizar e disponibilizar para análise
 - Não precisa ser programador: hoje o foco é **SQL e ferramentas visuais**
-
 
 ---
 
@@ -66,7 +63,6 @@ Roteiro de slides para a **abertura do Databricks Day - Treinamento para Curador
 - Transacional = a **planilha onde você digita** cada lançamento
 - Analítico = a **planilha dinâmica / relatório** que resume milhões de lançamentos para você entender o quadro geral
 
-
 ---
 
 ## Slide 5 — Como os dados chegam ao Databricks
@@ -83,7 +79,6 @@ Fluxo macro (conceitual, sem detalhes técnicos):
 - **Governança**: cada pessoa vê só o que tem permissão para ver
 - Você trabalha principalmente na ponta do **consumo**
 
-
 ---
 
 ## Slide 6 — Tour da plataforma: Workspace
@@ -92,7 +87,6 @@ Fluxo macro (conceitual, sem detalhes técnicos):
 - Reúne suas consultas, notebooks, dashboards e pastas
 - **Onde fica:** é o próprio site que você acessa ao entrar; o menu lateral esquerdo dá acesso a tudo
 - Comparação: como a **janela do seu computador** com todas as ferramentas à mão
-
 
 ---
 
@@ -103,7 +97,6 @@ Fluxo macro (conceitual, sem detalhes técnicos):
 - **Onde fica:** menu lateral → **Catalog**
 - Comparação: como uma **pasta principal** que guarda outras pastas
 
-
 ---
 
 ## Slide 8 — Tour da plataforma: Schema (Database)
@@ -112,7 +105,6 @@ Fluxo macro (conceitual, sem detalhes técnicos):
 - Ex.: um schema para "beneficiários", outro para "autorizações"
 - **Onde fica:** dentro de um catálogo, no **Catalog Explorer**
 - Comparação: uma **subpasta** dentro da estante, ou uma **aba temática** de uma pasta de trabalho
-
 
 ---
 
@@ -123,7 +115,6 @@ Fluxo macro (conceitual, sem detalhes técnicos):
 - Dá para ver a estrutura das colunas (Schema/Sample Data) e uma prévia dos dados
 - **Onde fica:** dentro de um schema, no **Catalog Explorer**
 
-
 ---
 
 ## Slide 10 — Tour da plataforma: Notebook
@@ -132,7 +123,6 @@ Fluxo macro (conceitual, sem detalhes técnicos):
 - Permite misturar **código, texto explicativo e gráficos** no mesmo lugar
 - Ótimo para explorar dados passo a passo e documentar o raciocínio
 - **Onde fica:** menu lateral → **Workspace / New → Notebook**
-
 
 ---
 
@@ -144,7 +134,6 @@ Fluxo macro (conceitual, sem detalhes técnicos):
 - **Onde fica:** menu lateral → **Dashboards**
 - Bônus: o **Genie** deixa você **perguntar em linguagem natural** (ex.: "quantas autorizações foram emitidas neste mês?") e recebe a resposta com gráfico
 
-
 ---
 
 ## Slide 12 — Casos de sucesso de IA em saúde (ilustrativos)
@@ -154,7 +143,6 @@ Fluxo macro (conceitual, sem detalhes técnicos):
 - **Previsão de sinistralidade** — usar o histórico para antecipar custos assistenciais e apoiar o planejamento financeiro
 - **Priorização de autorizações** — apoiar a triagem de guias/pedidos, agilizando os casos simples e destacando os que precisam de análise humana
 - **Análise da jornada do beneficiário** — entender o caminho do paciente entre atendimentos para melhorar experiência, adesão e prevenção
-
 
 ---
 
